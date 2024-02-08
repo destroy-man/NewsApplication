@@ -7,5 +7,5 @@
 - сохранять новости.
 Реализована работа приложения без сети. В случае отсутствия интернета новости берутся из кэша.
   
-Приложение написано на Kotlin, с использованием следующих библиотек: lottie, Moxy (для MVP), Retrofit, RxJava, Picasso, Dagger2, Room, Kotlin Coroutines, swiperefreshlayout. В качестве архитектуры приложения используется Clean Architecture. 
+Приложение написано на Kotlin, с использованием следующих библиотек: lottie, Moxy (для MVP), Retrofit, RxJava, Picasso, Dagger2, Room, Kotlin Coroutines, swiperefreshlayout. В качестве архитектуры приложения использована Clean Architecture. 
 Для отдельных экранов реализованы следующие подходы: MVP, MVVM, MVI.
