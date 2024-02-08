@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.sources_screen.SourcesFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/sources_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/main_menu">
+
+        <TextView
+            android:id="@+id/sources_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/top_text_sources"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:inputType="text"
+            android:visibility="gone"
+            tools:ignore="LabelFor" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutSources"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sources_toolbar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_sources"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

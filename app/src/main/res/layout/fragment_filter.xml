@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.filter_screen.FiltersFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/filter_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/apply_menu">
+
+        <TextView
+            android:id="@+id/headlines_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/top_text_filrers"
+            android:textSize="24sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RadioGroup
+        android:id="@+id/sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_toolbar">
+
+        <RadioButton
+            android:id="@+id/sortPopularButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_sort_start_selector"
+            android:button="@drawable/button_sort_start_selector"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:text="@string/sort_popular_text" />
+
+        <RadioButton
+            android:id="@+id/sortNewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_sort_middle_selector"
+            android:button="@drawable/button_sort_middle_selector"
+            android:checked="true"
+            android:drawableStart="@drawable/apply_icon_black"
+            android:drawablePadding="10dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:text="@string/sort_new_text" />
+
+        <RadioButton
+            android:id="@+id/sortRelevantButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_sort_end_selector"
+            android:button="@drawable/button_sort_end_selector"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:text="@string/sort_relevant_text" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_text"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnChooseDate"
+        app:layout_constraintStart_toStartOf="@+id/sort"
+        app:layout_constraintTop_toTopOf="@+id/btnChooseDate" />
+
+    <ImageButton
+        android:id="@+id/btnChooseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_calendar"
+        android:contentDescription="@string/btn_choose_date_description"
+        android:src="@drawable/calendar_icon"
+        app:layout_constraintEnd_toEndOf="@+id/sort"
+        app:layout_constraintTop_toBottomOf="@+id/sort" />
+
+    <TextView
+        android:id="@+id/textSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/choose_date_text"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnChooseDate"
+        app:layout_constraintEnd_toStartOf="@+id/btnChooseDate"
+        app:layout_constraintTop_toTopOf="@+id/btnChooseDate" />
+
+    <TextView
+        android:id="@+id/textSelectedLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/language_text"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/sort"
+        app:layout_constraintTop_toBottomOf="@+id/btnChooseDate" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRussianLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/russian_language_text"
+        android:textColor="@color/black"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textSelectedLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/textSelectedLanguage"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEnglishLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/english_language_text"
+        android:textColor="@color/black"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/btnRussianLanguage"
+        app:layout_constraintTop_toTopOf="@+id/btnRussianLanguage"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGermanLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/deutsch_language_text"
+        android:textColor="@color/black"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/btnEnglishLanguage"
+        app:layout_constraintTop_toTopOf="@+id/btnRussianLanguage"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

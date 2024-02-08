@@ -1,0 +1,40 @@
+<resources>
+
+    <style name="Base.Theme.NewsApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+    </style>
+
+    <style name="Theme.NewsApplication" parent="Base.Theme.NewsApplication" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+    </style>
+
+    <style name="BottomCustomIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#00829C</item>
+    </style>
+
+    <style name="Widget.AppTheme.MaterialDatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>
+        <item name="colorPrimary">@color/dark_background</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="materialCalendarHeaderLayout">@style/materialCalendarHeaderLayout</item>
+        <item name="materialCalendarHeaderTitle">@style/materialCalendarHeaderTitle</item>
+        <item name="materialCalendarHeaderToggleButton">@style/Widget.AppTheme.MaterialCalendar.HeaderToggleButton</item>
+    </style>
+
+    <style name="Widget.AppTheme.MaterialCalendar.HeaderToggleButton" parent="Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="materialCalendarHeaderLayout" parent="Widget.MaterialComponents.MaterialCalendar.HeaderLayout">
+        <item name="android:background">#00677C0D</item>
+    </style>
+
+    <style name="materialCalendarHeaderTitle" parent="Widget.MaterialComponents.MaterialCalendar.HeaderTitle">
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

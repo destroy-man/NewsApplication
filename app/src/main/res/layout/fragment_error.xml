@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.headlines_screen.HeadlinesFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/error_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/main_menu">
+
+        <TextView
+            android:id="@+id/error_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/errorView"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/error_description_image"
+        android:src="@drawable/error_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_toolbar" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/internet_error"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/errorView"
+        app:layout_constraintStart_toStartOf="@+id/errorView"
+        app:layout_constraintTop_toBottomOf="@+id/errorView" />
+
+    <ImageButton
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/button_refresh_description_image"
+        android:src="@drawable/refresh_icon"
+        app:layout_constraintBottom_toTopOf="@+id/textRefresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/refresh_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

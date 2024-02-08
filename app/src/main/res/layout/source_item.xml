@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="40dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageSource"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/image_source_description"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nameSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageLayout"
+        app:layout_constraintTop_toTopOf="@+id/imageLayout" />
+
+    <TextView
+        android:id="@+id/textSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageLayout"
+        app:layout_constraintTop_toBottomOf="@+id/nameSource" />
+</androidx.constraintlayout.widget.ConstraintLayout>
