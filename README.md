@@ -13,6 +13,7 @@
 Установить приложение можно с помощью apk файла, расположенного в папке setup.
 
 <div>
+  <img src="Screenshots/AllScreens.gif" width="200" height="400">
   <img src="Screenshots/HeadlinesScreen.png" width="200" height="400">
   <img src="Screenshots/NewsScreen.png" width="200" height="400">
   <img src="Screenshots/SavedScreen.png" width="200" height="400">
