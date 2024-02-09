@@ -10,6 +10,8 @@
 Приложение написано на Kotlin, с использованием следующих библиотек: lottie, Moxy (для MVP), Retrofit, RxJava, Picasso, Dagger2, Room, Kotlin Coroutines, swiperefreshlayout. В качестве архитектуры приложения использована Clean Architecture. 
 Для отдельных экранов реализованы следующие архитектурные паттерны: MVP, MVVM, MVI.
 
+Установить приложение можно с помощью apk файла, расположенного в папке setup.
+
 <div>
   <img src="Screenshots/HeadlinesScreen.png" width="200" height="400">
   <img src="Screenshots/NewsScreen.png" width="200" height="400">
