@@ -1,16 +1,15 @@
 # NewsApplication
 
-Новостной агрегатор, который позволяет просматривать новости по всему миру. Кроме этого позволяет:
-- осуществлять поиск новостей по ключевым словам.
-- фильтровать новости по языку, дате, источнику.
-- сортировать новости по популярности, релевантности, дате.
-- сохранять новости.
-Реализована работа приложения без сети. В случае отсутствия интернета новости берутся из кэша.
+News aggregator, which allows watch news by world. Besides allows:
+- make news search by keywords.
+- filter news by language, date, source.
+- sort news by popularity, relevance, date.
+- save news.
+Realized application work without network. If internet out, news get from cache.
   
-Приложение написано на Kotlin, с использованием следующих библиотек: lottie, Moxy (для MVP), Retrofit, RxJava, Picasso, Dagger2, Room, Kotlin Coroutines, swiperefreshlayout. В качестве архитектуры приложения использована Clean Architecture. 
-Для отдельных экранов реализованы следующие архитектурные паттерны: MVP, MVVM, MVI.
+Application writed at Kotlin, with usage next libraries: lottie, Moxy (for MVP), Retrofit, RxJava, Picasso, Dagger2, Room, Kotlin Coroutines, swiperefreshlayout. I used Clean Architecture as Application Architecture. For different screens i realized next architecture patterns: MVP, MVVM, MVI.
 
-Установить приложение можно с помощью apk файла, расположенного в папке setup.
+Install application can with apk file, located in folder setup.
 
 <div>
   <img src="Screenshots/AllScreens.gif" width="200" height="400">
