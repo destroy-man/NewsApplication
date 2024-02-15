@@ -4,7 +4,9 @@ News aggregator, which allows watch news by world. Besides allows:
 - make news search by keywords.
 - filter news by language, date, source.
 - sort news by popularity, relevance, date.
-- save news.
+- save news. News is store during two weeks.
+
+Realized news caching. News is store during two weeks.
 
 Realized application work without network. If internet out, news get from cache.
   
