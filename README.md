@@ -15,7 +15,6 @@ Application writed at Kotlin, with usage next libraries: lottie, Moxy (for MVP),
 Install application can with apk file, located in folder setup.
 
 <div>
-  <img src="Screenshots/AllScreens.gif" width="200" height="400">
   <img src="Screenshots/HeadlinesScreen.png" width="200" height="400">
   <img src="Screenshots/NewsScreen.png" width="200" height="400">
   <img src="Screenshots/SavedScreen.png" width="200" height="400">
